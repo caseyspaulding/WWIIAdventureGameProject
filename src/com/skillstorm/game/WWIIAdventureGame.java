@@ -1,3 +1,15 @@
+// Name: Casey Spaulding
+// Date: 3/30/2023
+
+// Assignment: WW2 Adventure Game
+// Instructor: Miles Mixon
+// Class: SkillStorm Java
+// Description: This is a text-based adventure game where the player chooses a character type and then plays through a series of scenes.
+
+// This is the main class for the game. It is responsible for creating the player and scenes.
+// It also contains the main game loop.
+
+
 package com.skillstorm.game;
 import java.util.Scanner;
 
@@ -6,7 +18,15 @@ public class WWIIAdventureGame {
     private Scene[] scenes;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Name: Casey Spaulding");
+        System.out.println("Date: 3/30/2023");
+        System.out.println();
+        System.out.println("Assignment: WW2 Adventure Game");
+        System.out.println("Class: SkillStorm Java");
+        System.out.println("__________________________________________________________");
+        System.out.println();
         System.out.println("Welcome to the WW2 Adventure Game!");
+        System.out.println();
         System.out.println("Please enter your name:");
         String name = scanner.nextLine();
         System.out.println("Hello, " + name + "!");
