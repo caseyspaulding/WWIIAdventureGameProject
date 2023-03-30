@@ -27,10 +27,14 @@ public class USNavyScene extends Scene {
                     System.out.println("You successfully shoot down all enemy planes and defend your ship.");
                     navyPlayer.decreaseHealth(20);
                     navyPlayer.decreaseAmmo(50);
-                    System.out.println("Congratulations, sailor! You win!");
+                    System.out.println("*********************************************************");
+                    System.out.println("Congratulations, Sailor, You win!");
+                    System.out.println("*********************************************************");
+                    System.out.println("Score: " + navyPlayer.getHealth() + " health, " + navyPlayer.getAmmo() + " ammo, " + navyPlayer.getGold() + " gold, " + navyPlayer.getSupplies() + " supplies, " + navyPlayer.getShipCondition() + " ship condition");
                     playerWon = true; // set flag to true
                     System.out.println("");
                     System.out.println("Would you like to play again?");
+                    System.out.println("");
                     System.out.println("1. Yes");
                     System.out.println("2. No");
                     int playAgainChoice = scanner.nextInt();

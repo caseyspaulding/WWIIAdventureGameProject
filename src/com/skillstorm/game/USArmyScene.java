@@ -40,7 +40,10 @@ public class USArmyScene extends Scene {
 
                         System.out.println("");
                         System.out.println("You follow the map to the enemy stronghold and successfully infiltrate it.");
+                        System.out.println("*********************************************************");
                         System.out.println("Congratulations, Soldier! You win!");
+                        System.out.println("*********************************************************");
+
                         playerWon = true; // set flag to true
                         System.out.println("");
                         System.out.println("Would you like to play again?");

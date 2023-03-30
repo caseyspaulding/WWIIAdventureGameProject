@@ -17,6 +17,7 @@ public class USMarineScene extends Scene {
         int choice;
         boolean playerWon = false; // flag to indicate if player has won
         do {
+            System.out.println("");
             System.out.println("1. Search for enemy soldiers");
             System.out.println("2. Build fortifications");
             System.out.println("3. Advance forward");
@@ -33,6 +34,7 @@ public class USMarineScene extends Scene {
                     marinePlayer.decreaseAmmo(50);
                     System.out.println("You find a map on one of the enemy soldiers. The map leads to a hidden enemy bunker.");
                     System.out.println("Do you want to:");
+                    System.out.println("");
                     System.out.println("1. Follow the map to the enemy bunker");
                     System.out.println("2. Stay put and defend your position");
                     int subChoice = scanner.nextInt();
@@ -40,7 +42,10 @@ public class USMarineScene extends Scene {
                     if (subChoice == 1) {
                         System.out.println("");
                         System.out.println("You follow the map to the enemy bunker and successfully infiltrate it.");
-                        System.out.println("Congratulations, Marine! You win!");
+                        System.out.println("");
+                        System.out.println("*********************************************************");
+                        System.out.println("Congratulations, Marine! You captured the Beach! You win!");
+                        System.out.println("*********************************************************");
                         playerWon = true; // set flag to true
                         System.out.println("");
                         System.out.println("Would you like to play again?");

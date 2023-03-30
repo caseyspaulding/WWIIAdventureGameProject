@@ -19,7 +19,6 @@ public class WWIIAdventureGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Name: Casey Spaulding");
-        System.out.println("Date: 3/30/2023");
         System.out.println();
         System.out.println("Assignment: WW2 Adventure Game");
         System.out.println("Class: SkillStorm Java");
@@ -35,7 +34,7 @@ public class WWIIAdventureGame {
         boolean playAgain = true;
         while (playAgain) {
             System.out.println("----------------------------------");
-            System.out.println("Please choose your character type:");
+            System.out.println("Time to join the fight. Choose your military branch:");
             System.out.println("");
             System.out.println("1. US Army");
             System.out.println("2. US Navy");
