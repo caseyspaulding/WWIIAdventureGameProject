@@ -67,11 +67,13 @@ public class USMarineScene extends Scene {
                     }
                     break;
                 case 2:
+                    System.out.println("");
                     System.out.println("You build fortifications to protect your position.");
                     marinePlayer.increaseHealth(20);
                     marinePlayer.increaseSupplies(5);
                     break;
                 case 3:
+                    System.out.println("");
                     System.out.println("You advance forward, ready for any potential enemies.");
                     marinePlayer.increaseGold(20);
                     break;

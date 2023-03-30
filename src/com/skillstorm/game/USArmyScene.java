@@ -16,6 +16,7 @@ public class USArmyScene extends Scene {
         int choice;
         boolean playerWon = false; // flag to indicate if player has won
         do {
+            System.out.println("");
             System.out.println("1. Search for enemy soldiers");
             System.out.println("2. Set up camp");
             System.out.println("3. Advance forward");
@@ -59,17 +60,20 @@ public class USArmyScene extends Scene {
                             System.exit(0);
                         }
                     } else if (subChoice == 2) {
+                        System.out.println("");
                         System.out.println("You return to base to regroup with your fellow soldiers.");
                     } else {
                         System.out.println("Invalid choice. Please try again.");
                     }
                     break;
                 case 2:
+                    System.out.println("");
                     System.out.println("You set up camp and rest for the night.");
                     armyPlayer.increaseHealth(20);
                     armyPlayer.increaseSupplies(5);
                     break;
                 case 3:
+                    System.out.println("");
                     System.out.println("You advance forward, ready for any potential enemies.");
                     armyPlayer.increaseGold(20);
                     break;
