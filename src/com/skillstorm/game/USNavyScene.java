@@ -59,7 +59,7 @@ public class USNavyScene extends Scene {
                     System.out.println("2. No");
 
                     int playAgainChoice = scanner.nextInt();
-                    scanner.nextLine(); /
+                    scanner.nextLine();
                     if (playAgainChoice == 1) {
                         // restart game
                         WWIIAdventureGame.main(new String[]{});
