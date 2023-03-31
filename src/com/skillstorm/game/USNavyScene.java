@@ -21,7 +21,7 @@ public class USNavyScene extends Scene {
 
         int choice;
 
-        boolean playerWon = false; // flag to indicate if player has won
+        boolean playerWon = false;
 
         do {
             System.out.println("1. Search for enemy ships");
@@ -33,7 +33,7 @@ public class USNavyScene extends Scene {
 
             choice = scanner.nextInt();
 
-            scanner.nextLine(); // consume the newline character
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -50,21 +50,22 @@ public class USNavyScene extends Scene {
                     System.out.println("");
 
                     System.out.println("Score: " + navyPlayer.getHealth() + " health, " + navyPlayer.getAmmo() + " ammo, " + navyPlayer.getGold() + " gold, " + navyPlayer.getSupplies() + " supplies, " + navyPlayer.getShipCondition() + " ship condition");
-                    playerWon = true; // set flag to true
+                    playerWon = true;
 
                     System.out.println("");
-                    System.out.println("Would you like to play again in a different branch of the military?");
+                    System.out.println("Would you like to play again ?");
                     System.out.println("");
                     System.out.println("1. Yes");
                     System.out.println("2. No");
 
                     int playAgainChoice = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline character
+                    scanner.nextLine(); /
                     if (playAgainChoice == 1) {
                         // restart game
                         WWIIAdventureGame.main(new String[]{});
                     } else {
                         // end game
+                        System.out.println("Thank you for playing!");
                         System.exit(0);
                     }
                     break;
@@ -82,7 +83,7 @@ public class USNavyScene extends Scene {
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
-        } while (choice < 1 || choice > 3 && !playerWon); // exit loop if player won
+        } while (choice < 1 || choice > 3); // exit loop if player won
     }
 
     @Override

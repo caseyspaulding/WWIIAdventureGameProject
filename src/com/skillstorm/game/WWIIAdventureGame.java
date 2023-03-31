@@ -90,18 +90,9 @@ public class WWIIAdventureGame {
                 currentScene.play(player);
                 currentSceneIndex = currentScene.getNextSceneIndex();
             }
-            if (player.isAlive()) {
-                System.out.println("Congratulations, you have won the game!");
-            } else {
-                System.out.println("Sorry, you have lost the game.");
-            }
 
-            // Prompt the player to play again
-            System.out.println("Would you like to play again? (y/n)");
-            String playAgainChoice = scanner.next();
-            if (!playAgainChoice.equalsIgnoreCase("y")) {
-                playAgain = false;
-            }
+
+
         }
         System.out.println("Thanks for playing! Goodbye.");
     }

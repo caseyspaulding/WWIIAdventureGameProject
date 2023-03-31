@@ -14,7 +14,7 @@ public class USArmyScene extends Scene {
         USArmyPlayer armyPlayer = (USArmyPlayer) player;
         Scanner scanner = new Scanner(System.in);
         int choice;
-        boolean playerWon = false; // flag to indicate if player has won
+        boolean playerWon = false;
         do {
             System.out.println("");
             System.out.println("1. Search for enemy soldiers");
@@ -23,7 +23,7 @@ public class USArmyScene extends Scene {
             System.out.println("");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // consume the newline character
+            scanner.nextLine();
             switch (choice) {
                 case 1:
                     System.out.println("");
@@ -36,7 +36,7 @@ public class USArmyScene extends Scene {
                     System.out.println("1. Follow the map to the enemy stronghold");
                     System.out.println("2. Return to base");
                     int subChoice = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline character
+                    scanner.nextLine();
                     if (subChoice == 1) {
 
                         System.out.println("");
@@ -45,13 +45,13 @@ public class USArmyScene extends Scene {
                         System.out.println("Congratulations, Soldier! You win!");
                         System.out.println("*********************************************************");
 
-                        playerWon = true; // set flag to true
+                        playerWon = true;
                         System.out.println("");
                         System.out.println("Would you like to play again?");
                         System.out.println("1. Yes");
                         System.out.println("2. No");
                         int playAgainChoice = scanner.nextInt();
-                        scanner.nextLine(); // consume the newline character
+                        scanner.nextLine();
                         if (playAgainChoice == 1) {
                             // restart game
                             main(new String[]{});
@@ -81,7 +81,7 @@ public class USArmyScene extends Scene {
                     System.out.println("Invalid choice. Please try again.");
                     break;
             }
-        } while (choice < 1 || choice > 3 && !playerWon); // exit loop if player won
+        } while (choice < 1 || choice > 3); // exit loop if player won
     }
 
     @Override

@@ -26,7 +26,7 @@ public class USMarineScene extends Scene {
             System.out.println("");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // consume the newline character
+            scanner.nextLine();
             switch (choice) {
                 case 1:
                     System.out.println("");
@@ -40,7 +40,7 @@ public class USMarineScene extends Scene {
                     System.out.println("1. Follow the map to the enemy bunker");
                     System.out.println("2. Stay put and defend your position");
                     int subChoice = scanner.nextInt();
-                    scanner.nextLine(); // consume the newline character
+                    scanner.nextLine();
                     if (subChoice == 1) {
                         System.out.println("");
                         System.out.println("You follow the map to the enemy bunker and successfully infiltrate it.");
@@ -58,12 +58,13 @@ public class USMarineScene extends Scene {
                         System.out.println("1. Yes");
                         System.out.println("2. No");
                         int playAgainChoice = scanner.nextInt();
-                        scanner.nextLine(); // consume the newline character
+                        scanner.nextLine();
                         if (playAgainChoice == 1) {
                             // restart game
                             main(new String[]{});
                         } else {
                             // end game
+                            System.out.println("Thank you for playing!");
                             System.exit(0);
                         }
                     } else if (subChoice == 2) {

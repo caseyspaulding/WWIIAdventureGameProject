@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a603aef-ac3a-468e-842e-48120447401e" name="Changes" comment="updated Navy and Marine Scene with scores">
-      <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/USArmyPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/USArmyPlayer.java" afterDir="false" />
+    <list default="true" id="7a603aef-ac3a-468e-842e-48120447401e" name="Changes" comment="refactored to be more readable.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/USArmyScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/USArmyScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/USMarineScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/USMarineScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/USNavyPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/USNavyPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/USNavyScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/USNavyScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skillstorm/game/WWIIAdventureGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillstorm/game/WWIIAdventureGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <workItem from="1680168008223" duration="5837000" />
       <workItem from="1680211751780" duration="1563000" />
       <workItem from="1680218004867" duration="2145000" />
-      <workItem from="1680220209863" duration="2001000" />
+      <workItem from="1680220209863" duration="3071000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1680171770955</created>
@@ -114,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680221231521</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactored to be more readable.">
+      <created>1680256529134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680256529134</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +130,7 @@
     <MESSAGE value="updated game intro" />
     <MESSAGE value="updated scenes with better ending" />
     <MESSAGE value="updated Navy and Marine Scene with scores" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Navy and Marine Scene with scores" />
+    <MESSAGE value="refactored to be more readable." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored to be more readable." />
   </component>
 </project>
