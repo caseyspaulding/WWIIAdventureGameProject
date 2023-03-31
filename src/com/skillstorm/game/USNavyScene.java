@@ -10,8 +10,13 @@ public class USNavyScene extends Scene {
 
     @Override
     public void play(Player player) {
+        System.out.println("You have chosen the U.S. Navy!" );
+        System.out.println("Current status");
+        System.out.println("score: " + player.health + " health, " + player.supplies + " supplies, " + player.gold + " gold");
         System.out.println(getDescription());
+
         USNavyPlayer navyPlayer = (USNavyPlayer) player;
+
         Scanner scanner = new Scanner(System.in);
 
         int choice;

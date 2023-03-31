@@ -13,6 +13,8 @@ public class USMarineScene extends Scene {
     public void play(Player player) {
         System.out.println(getDescription());
         USMarinePlayer marinePlayer = (USMarinePlayer) player;
+        System.out.println("Current status");
+        System.out.println("score: " + player.health + " health, " + player.supplies + " supplies, " + player.gold + " gold");
         Scanner scanner = new Scanner(System.in);
         int choice;
         boolean playerWon = false; // flag to indicate if player has won
@@ -43,10 +45,14 @@ public class USMarineScene extends Scene {
                         System.out.println("");
                         System.out.println("You follow the map to the enemy bunker and successfully infiltrate it.");
                         System.out.println("");
+
                         System.out.println("*********************************************************");
                         System.out.println("Congratulations, Marine! You captured the Beach! You win!");
                         System.out.println("*********************************************************");
-                        playerWon = true; // set flag to true
+
+                        System.out.println("Score: " + marinePlayer.getHealth() + " health, " + marinePlayer.getAmmo() + " ammo, " + marinePlayer.getGold() + " gold, " + marinePlayer.getSupplies() + " supplies, " );
+
+                        playerWon = true;
                         System.out.println("");
                         System.out.println("Would you like to play again?");
                         System.out.println("1. Yes");
