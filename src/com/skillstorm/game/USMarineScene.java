@@ -92,6 +92,7 @@ public class USMarineScene extends Scene {
 
     @Override
     public int getNextSceneIndex() {
+
         return 1; // return index of the next scene
     }
 }

@@ -16,6 +16,7 @@ public class USArmyPlayer extends Player {
     }
 
     public int getAmmo() {
+
         return ammo;
     }
 

@@ -19,10 +19,12 @@ public class USNavyPlayer extends Player {
     }
 
     public int getShipCondition() {
+
         return shipCondition;
     }
 
     public int getAmmo() {
+
         return ammo;
     }
 

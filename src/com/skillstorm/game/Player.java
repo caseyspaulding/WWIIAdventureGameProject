@@ -14,18 +14,22 @@ public class Player {
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getHealth() {
+
         return health;
     }
 
     public int getSupplies() {
+
         return supplies;
     }
 
     public int getGold() {
+
         return gold;
     }
 
@@ -72,6 +76,7 @@ public class Player {
     }
 
     public boolean isAlive() {
+
         return health > 0;
     }
 }
